@@ -1,0 +1,40 @@
+--- DEPENDENCIES & BUILD OUTPUTS ---
+
+Build folder
+
+build/
+.swiftpm/
+
+CocoaPods generated directory
+
+Pods/
+
+--- XCODE PROJECT FILES (USER SPECIFIC) ---
+
+Derived Data
+
+DerivedData/
+
+User data (personal preferences, breakpoints, open tabs, etc.)
+
+*.xcuserdatad
+
+For older Xcode versions (can cause conflicts)
+
+.DS_Store
+
+Swift Package Manager files
+
+.build/
+Package.resolved
+
+--- SECRET & SENSITIVE FILES (MUST BE IGNORED) ---
+
+Firebase/Google Service Info file
+
+GoogleService-Info.plist
+
+General Secrets files (if you create any custom secrets)
+
+Secrets.swift
+Secrets.h
