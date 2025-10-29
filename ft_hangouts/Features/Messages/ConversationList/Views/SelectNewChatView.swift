@@ -65,6 +65,7 @@ private struct DisplayContactView: View {
     var body: some View {
         HStack {
             ProfileImageView(contact: contact, width: 40, height: 40)
+                .padding(.horizontal)
             
             DisplayContactInfoView(contact: contact)
             
