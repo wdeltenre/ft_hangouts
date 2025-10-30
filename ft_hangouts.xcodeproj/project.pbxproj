@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD72A7E52E68820E007A7D4B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD72A7E42E68820E007A7D4B /* GoogleService-Info.plist */; };
 		FD945B282DCB79DE00B9B3E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD945B272DCB79DE00B9B3E6 /* AppDelegate.swift */; };
 		FD945B2B2DCB856200B9B3E6 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = FD945B2A2DCB856200B9B3E6 /* FirebaseCore */; };
 		FD945B2D2DCB85BC00B9B3E6 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = FD945B2C2DCB85BC00B9B3E6 /* FirebaseAnalytics */; };
@@ -64,7 +63,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FD72A7E42E68820E007A7D4B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FD945B272DCB79DE00B9B3E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD40A0E2E68D4B10047058C /* ft-hangouts-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ft-hangouts-Info.plist"; sourceTree = SOURCE_ROOT; };
 		FDD40A0F2E69A69C0047058C /* ft_hangouts.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ft_hangouts.entitlements; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		FD58792A2E9EC11F00E03CD7 /* App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = App; sourceTree = "<group>"; };
 		FD58792B2E9EC12A00E03CD7 /* Features */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Features; sourceTree = "<group>"; };
 		FD58792C2E9EC18500E03CD7 /* Core */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Core; sourceTree = "<group>"; };
 		FD58792D2E9EC18D00E03CD7 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
@@ -166,10 +163,8 @@
 				FD58792D2E9EC18D00E03CD7 /* Services */,
 				FD58792C2E9EC18500E03CD7 /* Core */,
 				FD58792B2E9EC12A00E03CD7 /* Features */,
-				FD58792A2E9EC11F00E03CD7 /* App */,
 				FDD40A0F2E69A69C0047058C /* ft_hangouts.entitlements */,
 				FDD40A0E2E68D4B10047058C /* ft-hangouts-Info.plist */,
-				FD72A7E42E68820E007A7D4B /* GoogleService-Info.plist */,
 				FDDE9CD12D8312C200E2A07A /* ft_hangoutsApp.swift */,
 				FDDE9CD52D8312C400E2A07A /* Assets.xcassets */,
 				FDDE9CD72D8312C400E2A07A /* Preview Content */,
@@ -219,7 +214,6 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				FD58792A2E9EC11F00E03CD7 /* App */,
 				FD58792B2E9EC12A00E03CD7 /* Features */,
 				FD58792C2E9EC18500E03CD7 /* Core */,
 				FD58792D2E9EC18D00E03CD7 /* Services */,
@@ -352,7 +346,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDDE9CD92D8312C400E2A07A /* Preview Assets.xcassets in Resources */,
-				FD72A7E52E68820E007A7D4B /* GoogleService-Info.plist in Resources */,
 				FDDE9CD62D8312C400E2A07A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
