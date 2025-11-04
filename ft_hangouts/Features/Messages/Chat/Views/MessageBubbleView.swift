@@ -18,6 +18,10 @@ struct MessageBubbleView: View {
         return currentMessage.senderID == currentUserID
     }
     
+    var sameUser: Bool {
+        return currentMessage.senderID == previousMessage?.senderID
+    }
+    
     var body: some View {
         HStack {
             if isFromCurrentUser {
@@ -29,7 +33,7 @@ struct MessageBubbleView: View {
                     MessageBubbleModifier(
                         position: isFromCurrentUser ? .leading : .trailing,
                         backgroundColor: isFromCurrentUser ? Color(.systemCyan) : Color(.systemGray3),
-                        verticalPaddingOutside: isFromCurrentUser ? 1 : 10
+                        verticalPaddingOutside: sameUser ? 1 : 10
                     )
                 )
             
