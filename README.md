@@ -77,48 +77,48 @@ For full functionality, specifically handling authentication and background proc
 Once the app is running, you must configure the following in your Firebase Console:
 
 1. **Security Rules:** Set up **Firestore Security Rules** to control access to your data collections. For production-ready apps, these rules must enforce user authentication and data ownership.  
-   \`\`\`  
-   rules\_version \= '2';  
-   service cloud.firestore {  
-   	match /databases/{database}/documents {  
-     
-       match /users/{userId} {  
-       	allow read, write: if true;  
-   		}  
-     
-       match /contacts/{contactId} {  
-         allow read, write: if true;  
-       }  
-     
-       match /conversations/{conversationId} {  
-         allow read, write: if true;  
-       }  
-     
-       match /messages/{messageId} {  
-         allow read, write: if true;  
-       }  
-   	}  
-   }  
-   \`\`\`  
+   ```  
+    rules_version = '2';  
+    service cloud.firestore {  
+        match /databases/{database}/documents {  
+        
+            match /users/{userId} {  
+                allow read, write: if true;  
+            }  
+            
+            match /contacts/{contactId} {  
+                allow read, write: if true;  
+            }  
+            
+            match /conversations/{conversationId} {  
+                allow read, write: if true;  
+            }  
+            
+            match /messages/{messageId} {  
+                allow read, write: if true;  
+            }  
+        }  
+    }  
+   ```  
 2. **Indexes:** Create necessary **Firestore Indexes** for any complex queries involving sorting or multiple `where` clauses. The console will prompt you to create these when you run a query that requires one.  
-   \`\`\`  
-   \[  
+   ```  
+   [  
        {  
            "collectionId": "contacts",  
-           "fields": \[  
+           "fields": [  
                { "fieldPath": "phoneNumber", "order": "ASCENDING" },  
                { "fieldPath": "userID", "order": "ASCENDING" }  
-           \]  
+           ]  
        },  
        {  
            "collectionId": "messages",  
-           "fields": \[  
+           "fields": [  
                { "fieldPath": "conversationId", "order": "ASCENDING" },  
                { "fieldPath": "timestamp", "order": "ASCENDING" }  
-           \]  
+           ]  
        }  
-   \]  
-   \`\`\`
+   ]  
+   ```
 
 ## **🔒 Security Note**
 
