@@ -29,8 +29,8 @@ Follow these steps to clone the repository and run the project locally.
 
 ### **Prerequisites**
 
-* **Xcode 15+**  
-* **iOS 17+ SDK**  
+* **Xcode 16.4+**  
+* **iOS 17.2+ SDK**  
 * **Swift 5**
 
 ### **1\. Clone the Repository**
