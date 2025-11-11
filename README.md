@@ -8,10 +8,22 @@ ft\_hangouts is a comprehensive mobile application that serves as both a contact
 
 ### **Key Features**
 
-* **User Authentication:** Secure **Log In** and registration capabilities required to access the application and synchronize data with Firebase.  
-* **Synchronized Contact Management:** Full CRUD (Create, Read, Update, Delete) capabilities for contacts, with **all data stored and synchronized instantly** via the Firebase backend.  
-* **Real-time Chat:** Live messaging functionality powered by Firebase for instant communication between users.  
-* **Multi-Language Support:** The user interface supports **three different languages**, handled through a dedicated localization service layer.  
+* **User Authentication:** Secure **Log In** and registration capabilities required to access the application and synchronize data with Firebase.
+  
+  ![Logging](https://github.com/user-attachments/assets/950d2a55-54b3-4abc-a2d5-705e174d5f22)
+
+* **Synchronized Contact Management:** Full CRUD (Create, Read, Update, Delete) capabilities for contacts, with **all data stored and synchronized instantly** via the Firebase backend.
+  
+  ![contact](https://github.com/user-attachments/assets/2c8afe75-e3c5-46a8-802c-d968046e98fa)
+
+* **Real-time Chat:** Live messaging functionality powered by Firebase for instant communication between users.
+  
+  ![Message](https://github.com/user-attachments/assets/0ececfc9-4351-4596-9a8c-1b760c9d511e)
+
+* **Multi-Language Support:** The user interface supports **three different languages**, handled through a dedicated localization service layer.
+  
+  ![Settings](https://github.com/user-attachments/assets/af195857-ebb6-4232-9937-10c89b8c4190)
+
 * **Responsive UI:** Built using declarative SwiftUI framework.
 
 ### **🛠️ Technical Stack & Logic**
