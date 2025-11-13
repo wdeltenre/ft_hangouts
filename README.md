@@ -1,6 +1,6 @@
 # **ft\_hangouts**
 
-An iOS mobile application developed with **SwiftUI** designed to handle local contact management and messaging functionality. This project focuses on demonstrating clean architecture principles, secure API key management via Git exclusion, and real-time database integration.
+An iOS mobile application developed with **SwiftUI** designed to handle local contact management and messaging functionality. This project focuses on demonstrating clean architecture principles and real-time database integration.
 
 ## **🚀 Project Overview**
 
@@ -10,30 +10,22 @@ ft\_hangouts is a comprehensive mobile application that serves as both a contact
 
 * **User Authentication:** Secure **Log In** and registration capabilities required to access the application and synchronize data with Firebase.
   
-  ![Logging](https://github.com/user-attachments/assets/950d2a55-54b3-4abc-a2d5-705e174d5f22)
+  <img src="https://github.com/user-attachments/assets/950d2a55-54b3-4abc-a2d5-705e174d5f22" width="200" />
 
 * **Synchronized Contact Management:** Full CRUD (Create, Read, Update, Delete) capabilities for contacts, with **all data stored and synchronized instantly** via the Firebase backend.
   
-  ![contact](https://github.com/user-attachments/assets/2c8afe75-e3c5-46a8-802c-d968046e98fa)
+  <img src="https://github.com/user-attachments/assets/2c8afe75-e3c5-46a8-802c-d968046e98fa" width="200" />
 
 * **Real-time Chat:** Live messaging functionality powered by Firebase for instant communication between users.
   
-  ![Message](https://github.com/user-attachments/assets/0ececfc9-4351-4596-9a8c-1b760c9d511e)
+  <img src="https://github.com/user-attachments/assets/0ececfc9-4351-4596-9a8c-1b760c9d511e" width="200" />
 
 * **Multi-Language Support:** The user interface supports **three different languages**, handled through a dedicated localization service layer.
   
-  ![Settings](https://github.com/user-attachments/assets/af195857-ebb6-4232-9937-10c89b8c4190)
+  <img src="https://github.com/user-attachments/assets/af195857-ebb6-4232-9937-10c89b8c4190" width="200" />
 
 * **Responsive UI:** Built using declarative SwiftUI framework.
-
-### **🛠️ Technical Stack & Logic**
-
-| Component | Technology / Logic Used | Description |
-| :---- | :---- | :---- |
-| **Framework** | **SwiftUI** | Used for building the entire user interface and ensuring a modern, declarative structure. |
-| **Networking/Backend** | **Firebase** | Used for real-time synchronization of all persistent user data, including contact management and messaging, as well as handling user authentication. |
-| **Dependency Injection** | **Service Manager** | Services (e.g., ColorThemeManager, LocalizationManager) are instantiated and managed to ensure code decoupling. |
-| **Architecture** | **MVVM (Model-View-ViewModel)** | All feature modules follow this pattern, using **ViewModels** to handle business logic and expose state to **Views**. |
+  
 
 ## **⚙️ Local Development Setup**
 
@@ -44,14 +36,6 @@ Follow these steps to clone the repository and run the project locally.
 * **Xcode 16.4+**  
 * **iOS 17.2+ SDK**  
 * **Swift 5**
-
-### **1\. Clone the Repository**
-
-Clone the project using the SSH protocol.
-
-### **2\. Install Dependencies**
-
-This project uses **Swift Package Manager (SPM)** for external libraries (Firebase). Xcode will automatically fetch all necessary packages (modules) upon opening the project for the first time. **No manual installation command is required.**
 
 ## **🔗 Firebase Backend Setup**
 
@@ -131,14 +115,6 @@ Once the app is running, you must configure the following in your Firebase Conso
        }  
    ]  
    ```
-
-## **🔒 Security Note**
-
-The GoogleService-Info.plist file contains public API keys and is **securely excluded** from this Git repository via the .gitignore file to prevent accidental exposure of your Firebase project ID. Never commit this file.
-
-## **⚠️ Constraints & Scalability**
-
-This minimal version of the application avoids certain paid features to run entirely on the Firebase free tier, though they are recommended for production:
 
 ### **Firebase Cloud Functions**
 
